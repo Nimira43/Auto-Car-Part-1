@@ -16,5 +16,3 @@ blur = cv2.GaussianBlur(grey, (5, 5), 0)
 
 cv2.imshow('result', blur)
 cv2.waitKey(0)
-
-# Smoothening Images - reduce noise using Gaussian Blur by filtering it out 
