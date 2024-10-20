@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import matplotlib
+import matplotlib.pyplot as plt
 
 def canny(image):
   grey = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
