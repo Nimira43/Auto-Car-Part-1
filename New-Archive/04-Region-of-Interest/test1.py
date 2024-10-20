@@ -9,11 +9,11 @@ def canny(image):
   return canny
 
 
-#image = cv2.imread('./images/test-1.jpg')
+image = cv2.imread('./images/test-1.jpg')
 
-# My Image 
+# My Images 
 
-image = cv2.imread('./images/test-6.jpg')
+# image = cv2.imread('./images/test-6.jpg')
 
 lane_image = np.copy(image)
 canny = canny(lane_image)
