@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import matplotlib
 
 def canny(image):
   grey = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
@@ -11,6 +12,7 @@ def canny(image):
 image = cv2.imread('./images/test-1.jpg')
 
 # My Images 
+
 # image = cv2.imread('./images/test-4.jpg')
 # image = cv2.imread('./images/test-6.jpg')
 
