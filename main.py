@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 def canny(image):
   grey = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
@@ -9,7 +9,7 @@ def canny(image):
   return canny
 
 
-#image = cv2.imread('./images/test-1.jpg')
+# image = cv2.imread('./images/test-1.jpg')
 
 # My Image 
 
@@ -18,5 +18,5 @@ image = cv2.imread('./images/test-6.jpg')
 lane_image = np.copy(image)
 canny = canny(lane_image)
 
-cv2.imshow('result', canny)
-cv2.waitKey(0)
+plt.imshow(canny)
+plt.show()
